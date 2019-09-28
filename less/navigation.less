@@ -1,1 +1,63 @@
 // Navigation code here
+
+.nav_bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+    width: @fulWidth;
+    margin: 0 auto ;
+    align-items: center;
+    
+    font-size: 17px;
+    font-weight: bold;
+    color: @river-bend;
+    background-color: @wild-sand;
+    padding: 9px;
+    border: @sea-shell 1px solid;
+    position: fixed;
+    top:0;
+    opacity: 0.9;
+    @media @mobile {
+        font-size: 15px;
+    }
+   
+    a {
+        color:@river-bend;
+        width: 30%;
+        text-decoration: none;
+        justify-content: space-evenly;
+        padding-left:40px;
+        &:hover{
+                
+              color:green;
+        }
+        @media @mobile {
+            padding-left:30px;
+        }
+    }
+
+    .logoSpace{
+        margin: 15px;
+        font-size: 40px;
+        color:@ebony-clay;
+
+        @media @mobile {
+            font-size: 35px;
+        }
+       
+    }
+
+    
+}
+
+.imgHeader{
+    display: block;
+    
+ img{
+    border-radius: 2.5%;
+ }
+  
+   
+}
+
